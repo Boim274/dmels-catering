@@ -151,7 +151,7 @@ export default function HomePage() {
                     <div class="p-8">
 
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                            <h3 class="text-xl font-bold text-slate-900 ">
                                 Nasi Lemak Special
                             </h3>
                             <span class="text-primary font-black text-xl">
@@ -169,7 +169,7 @@ export default function HomePage() {
                             <span class="ml-2 text-slate-500 text-xs">(4.9)</span>
                         </div>
 
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        <p class="text-sm text-slate-600  mb-6 leading-relaxed">
                             Traditional fragrant rice cooked in coconut milk and pandan leaf, served with crispy anchovies and sambal.
                         </p>
 
@@ -199,7 +199,7 @@ export default function HomePage() {
                     <div class="p-8">
 
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                            <h3 class="text-xl font-bold text-slate-900 ">
                                 Beef Rendang Platter
                             </h3>
                             <span class="text-primary font-black text-xl">
@@ -217,7 +217,7 @@ export default function HomePage() {
                             <span class="ml-2 text-slate-500 text-xs">(4.9)</span>
                         </div>
 
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        <p class="text-sm text-slate-600  mb-6 leading-relaxed">
                             Slow-cooked beef in a rich aromatic coconut curry sauce. Our signature family recipe.
                         </p>
 
@@ -246,7 +246,7 @@ export default function HomePage() {
                     <div class="p-8">
 
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                            <h3 class="text-xl font-bold text-slate-900 ">
                                 Honey Glazed Chicken
                             </h3>
                             <span class="text-primary font-black text-xl">
@@ -264,7 +264,7 @@ export default function HomePage() {
                             <span class="ml-2 text-slate-500 text-xs">(4.9)</span>
                         </div>
 
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        <p class="text-sm text-slate-600  mb-6 leading-relaxed">
                             Succulent roasted chicken glazed with honey and local herbs for a sweet savory flavor.
                         </p>
 
@@ -291,7 +291,7 @@ export default function HomePage() {
           <h2 className="text-4xl lg:text-5xl font-black mt-3 mb-5 tracking-tight text-slate-900">
             Why Choose Us
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-600  max-w-2xl mx-auto leading-relaxed">
             We don’t just cook meals. We craft memorable dining experiences
             that bring people together with authentic flavors and warm hospitality.
           </p>
@@ -306,10 +306,10 @@ export default function HomePage() {
                 eco
               </span>
             </div>
-            <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+            <h3 className="text-xl font-bold mb-4 text-slate-900 ">
               Fresh Ingredients
             </h3>
-            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+            <p className="text-slate-600 leading-relaxed">
               We carefully source our vegetables, herbs, and meats daily
               from trusted local markets to guarantee freshness, quality,
               and natural flavor in every dish.
@@ -323,10 +323,10 @@ export default function HomePage() {
                 home
               </span>
             </div>
-            <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+            <h3 className="text-xl font-bold mb-4 text-slate-900 ">
               Homemade Taste
             </h3>
-            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+            <p className="text-slate-600  leading-relaxed">
               Every recipe follows our family traditions passed down through
               generations, bringing the comforting taste of authentic homemade
               cooking to your table.
@@ -340,10 +340,10 @@ export default function HomePage() {
                 schedule
               </span>
             </div>
-            <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+            <h3 className="text-xl font-bold mb-4 text-slate-900 ">
               On-Time Delivery
             </h3>
-            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+            <p className="text-slate-600  leading-relaxed">
               Your schedule matters. Our catering team ensures every order
               arrives fresh, hot, and exactly when your event begins.
             </p>
