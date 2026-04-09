@@ -118,7 +118,7 @@ export default function HomePage() {
   return (
     <>
     {/* Hero Section */}
-    <section className="relative min-h-[870px] flex items-center overflow-hidden">
+    <section className="relative min-h-[870px] flex items-center overflow-hidden" id="home">
       
       {/* Background */}
       <div className="absolute inset-0 z-0">
@@ -151,13 +151,19 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-4 bg-orange-600 text-white font-bold rounded-full text-lg hover:bg-orange-700 transition-all shadow-lg shadow-orange-200">
+            <a
+              href="#menu"
+              className="px-8 py-4 bg-orange-600 text-white font-bold rounded-full text-lg hover:bg-orange-700 transition-all shadow-lg shadow-orange-200 text-center"
+            >
               Lihat Menu
-            </button>
+            </a>
 
-            <button className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-full text-lg hover:bg-slate-50 transition-all">
+            <a
+              href="#about-us"
+              className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-full text-lg hover:bg-slate-50 transition-all text-center"
+            >
               Tentang Kami
-            </button>
+            </a>
           </div>
 
         </div>
@@ -166,7 +172,7 @@ export default function HomePage() {
     </section>
 
      {/* Menu */}
-     <section className="py-24 bg-orange-50/30">
+     <section className="py-24 bg-orange-50/30" id="menu">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         {/* Heading */}

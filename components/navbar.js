@@ -1,9 +1,31 @@
-import Link from "next/link";
+"use client";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [active, setActive] = useState("menu");
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["menu", "about-us", "faq", "home"];
+
+      sections.forEach((id) => {
+        const section = document.getElementById(id);
+        if (!section) return;
+
+        const top = section.offsetTop - 100;
+        const height = section.offsetHeight;
+        const scrollY = window.scrollY;
+
+        if (scrollY >= top && scrollY < top + height) {
+          setActive(id);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
   return (
- 
-     <header className="fixed top-0 w-full z-50 bg-white/90  backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <header className="fixed top-0 w-full z-50 bg-white/90  backdrop-blur-md border-b border-slate-200 shadow-sm">
      <nav className="flex justify-between items-center h-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
        
        {/* Logo */}
@@ -13,25 +35,25 @@ export default function Navbar() {
 
        {/* Menu */}
        <div className="hidden md:flex items-center space-x-8">
-         <a
-           href="#"
-           className="font-sans text-sm font-medium text-orange-600  border-b-2 border-orange-600 pb-1 hover:text-orange-500 dark:hover:text-orange-300 transition-colors"
-         >
-           Menu
-         </a>
-         <a
-           href="#about-us"
-           className="font-sans text-sm font-medium text-slate-600  hover:text-orange-500  transition-colors"
-         >
-           About Us
-         </a>
-         <a
-           href="#faq"
-           className="font-sans text-sm font-medium text-slate-600  hover:text-orange-500 transition-colors"
-         >
-           FAQ
-         </a>
-       </div>
+        {[
+          { id: "home", label: "Home" },
+          { id: "menu", label: "Menu" },
+          { id: "faq", label: "FAQ" },
+          { id: "about-us", label: "About Us" },
+        ].map((item) => (
+          <a
+            key={item.id}
+            href={`#${item.id}`}
+            className={`text-sm font-medium pb-1 transition-colors ${
+              active === item.id
+                ? "text-orange-600 border-b-2 border-orange-600"
+                : "text-slate-600 hover:text-orange-500"
+            }`}
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
 
        {/* Actions */}
        <div className="flex items-center space-x-4">

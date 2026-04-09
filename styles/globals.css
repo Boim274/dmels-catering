@@ -88,3 +88,7 @@ details > summary::-webkit-details-marker {
       height: 50px;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
