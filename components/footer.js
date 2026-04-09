@@ -1,107 +1,94 @@
 export default function Footer() {
     return (
-      <footer className="bg-white border-t border-slate-200 pt-20 pb-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  
-          {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-  
-            {/* Brand */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <span className="material-symbols-outlined text-primary text-3xl">
-                  restaurant_menu
-                </span>
-                <span className="text-xl font-black tracking-tight text-slate-900">
-                  D'MELS <span className="text-primary">CATERING</span>
-                </span>
-              </div>
-  
-              <p className="text-slate-600 leading-relaxed mb-6">
-                Bringing the heart of homemade cooking to your special occasions since 2010.
-              </p>
-  
-              {/* Social */}
-              <div className="flex gap-3">
-                <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full
-                  bg-slate-100 text-slate-600
-                  hover:bg-primary hover:text-white transition-all duration-300">
-                  <span className="material-symbols-outlined text-xl">
-                    social_leaderboard
-                  </span>
-                </a>
-  
-                <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full
-                  bg-slate-100 text-slate-600
-                  hover:bg-primary hover:text-white transition-all duration-300">
-                  <span className="material-symbols-outlined text-xl">
-                    photo_camera
-                  </span>
-                </a>
-  
-                <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full
-                  bg-slate-100 text-slate-600
-                  hover:bg-primary hover:text-white transition-all duration-300">
-                  <span className="material-symbols-outlined text-xl">
-                    alternate_email
-                  </span>
-                </a>
-              </div>
+      <footer className="bg-slate-50  border-t border-slate-200  w-full py-16">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+
+        {/* Top Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+
+          {/* Brand */}
+          <div className="space-y-4">
+            <div className="text-2xl font-black tracking-tighter text-orange-600 ">
+              D&apos;mels Catering
             </div>
-  
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-bold text-lg text-slate-900 mb-6">Quick Links</h4>
-              <ul className="space-y-3 text-slate-600">
-                <li><a href="#" className="hover:text-primary transition-colors duration-200">About Us</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors duration-200">Full Menu</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors duration-200">Event Services</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors duration-200">FAQ</a></li>
-              </ul>
-            </div>
-  
-            {/* Contact */}
-            <div>
-              <h4 className="font-bold text-lg text-slate-900 mb-6">Contact Us</h4>
-              <ul className="space-y-4 text-slate-600">
-                <li className="flex gap-3 items-start">
-                  <span className="material-symbols-outlined text-primary">location_on</span>
-                  <span>123 Culinary Road, Food District, Jakarta</span>
-                </li>
-                <li className="flex gap-3 items-center">
-                  <span className="material-symbols-outlined text-primary">call</span>
-                  <span>+62 21 555 0123</span>
-                </li>
-                <li className="flex gap-3 items-center">
-                  <span className="material-symbols-outlined text-primary">mail</span>
-                  <span>hello@dmels-catering.com</span>
-                </li>
-              </ul>
-            </div>
-  
-            {/* Opening Hours */}
-            <div>
-              <h4 className="font-bold text-lg text-slate-900">Opening Hours</h4>
-              <ul className="space-y-3 text-slate-600">
-                <li className="flex justify-between">
-                  <span>Mon - Fri</span>
-                  <span className="font-semibold text-slate-800">08:00 - 20:00</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Sat - Sun</span>
-                  <span className="font-semibold text-slate-800">09:00 - 22:00</span>
-                </li>
-              </ul>
-            </div>
-  
+            <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
+              Menghadirkan kehangatan masakan rumah ke meja makan keluarga Anda
+              dengan bumbu rempah asli nusantara.
+            </p>
           </div>
-  
-          {/* Bottom */}
-          <div className="pt-8 border-t border-slate-200 text-center text-sm text-slate-500">
-            © 2024 D'Mels Catering. All rights reserved.
+
+          {/* Contact */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-900 ">
+              Kontak Kami
+            </h4>
+
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3 text-sm text-slate-500">
+                <span className="material-symbols-outlined text-orange-600 text-lg">
+                  location_on
+                </span>
+                <span>
+                  Mutiara Bekasi Jaya Blok E6 No 7,
+                  <br />
+                  Sindangmulya, Cibarusah
+                </span>
+              </li>
+
+              <li className="flex items-center gap-3 text-sm text-slate-500">
+                <span className="material-symbols-outlined text-orange-600 text-lg">
+                  call
+                </span>
+                <a
+                  href="tel:+6281317591661"
+                  className="hover:text-orange-600 transition-colors"
+                >
+                  +62 813-1759-1661
+                </a>
+              </li>
+            </ul>
           </div>
-  
+
+          {/* Links */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-900 ">
+              Tautan Cepat
+            </h4>
+
+            <div className="flex flex-col space-y-2">
+              <a href="#" className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="text-sm text-slate-500 hover:text-orange-600 transition-colors">
+                Contact Us
+              </a>
+            </div>
+          </div>
+
         </div>
-      </footer>
+
+        {/* Bottom */}
+        <div className="pt-8 border-t border-slate-200  flex flex-col md:flex-row justify-between items-center gap-4">
+
+          <div className="text-sm text-slate-500 ">
+            © {new Date().getFullYear()} D&apos;mels Catering. All rights reserved.
+          </div>
+
+          <div className="flex gap-6">
+            <a href="#" className="text-slate-400 hover:text-orange-600 transition-colors">
+              <span className="material-symbols-outlined">facebook</span>
+            </a>
+            <a href="#" className="text-slate-400 hover:text-orange-600 transition-colors">
+              <span className="material-symbols-outlined">photo_camera</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
     );
   }

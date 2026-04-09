@@ -2,50 +2,52 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-200/60 bg-white/80 backdrop-blur-xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+ 
+     <header className="fixed top-0 w-full z-50 bg-white/90  backdrop-blur-md border-b border-slate-200 shadow-sm">
+     <nav className="flex justify-between items-center h-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
+       
+       {/* Logo */}
+       <div className="text-2xl font-black tracking-tighter text-orange-600 ">
+         D&apos;mels Catering
+       </div>
 
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-primary text-3xl">
-              restaurant_menu
-            </span>
-            <span className="text-xl font-black tracking-tight text-slate-900">
-              D'MELS <span className="text-primary">CATERING</span>
-            </span>
-          </div>
+       {/* Menu */}
+       <div className="hidden md:flex items-center space-x-8">
+         <a
+           href="#"
+           className="font-sans text-sm font-medium text-orange-600  border-b-2 border-orange-600 pb-1 hover:text-orange-500 dark:hover:text-orange-300 transition-colors"
+         >
+           Menu
+         </a>
+         <a
+           href="#about-us"
+           className="font-sans text-sm font-medium text-slate-600  hover:text-orange-500  transition-colors"
+         >
+           About Us
+         </a>
+         <a
+           href="#faq"
+           className="font-sans text-sm font-medium text-slate-600  hover:text-orange-500 transition-colors"
+         >
+           FAQ
+         </a>
+       </div>
 
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-            <a href="#hero" className="relative hover:text-primary transition-colors duration-200">
-              Home
-            </a>
-            <a href="#menu" className="relative hover:text-primary transition-colors duration-200">
-              Menu
-            </a>
-            <a href="#why-us" className="relative hover:text-primary transition-colors duration-200">
-              Why Us
-            </a>
-            <a href="#testimonials" className="relative hover:text-primary transition-colors duration-200">
-              Testimonials
-            </a>
-          </nav>
+       {/* Actions */}
+       <div className="flex items-center space-x-4">
+         <button className="p-2 text-slate-600 hover:text-orange-500 transition-colors relative">
+           <span className="material-symbols-outlined">
+             shopping_cart
+           </span>
+           <span className="absolute top-1 right-1 w-2 h-2 bg-orange-600 rounded-full"></span>
+         </button>
 
-          {/* CTA Button */}
-          <div className="flex items-center">
-            <button className="bg-primary text-white px-6 py-2.5 rounded-full
-              font-bold text-sm
-              hover:scale-105 hover:bg-primary/90
-              transition-all duration-300
-              shadow-lg shadow-primary/25"
-            >
-              Order Now
-            </button>
-          </div>
+         <button className="hidden md:block px-5 py-2 text-sm font-bold text-white bg-orange-600 rounded-full hover:bg-orange-700 transition-all scale-95 active:duration-100">
+           Order Now
+         </button>
+       </div>
 
-        </div>
-      </div>
-    </header>
+     </nav>
+   </header>
   );
 }
